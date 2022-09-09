@@ -18,6 +18,11 @@ public class MathController {
 		return height + width;
 	}
 
+	@GetMapping("/rectangle/p/{height}/{width}")
+	public Integer rectanglePerimeter(@PathVariable Integer height, @PathVariable Integer width) {
+		return height * width;
+	}
+
 	@GetMapping("/circle/p/{r}")
 	public Double circlePerimter(@PathVariable Double r) {
 		return 2 * Math.PI * r;

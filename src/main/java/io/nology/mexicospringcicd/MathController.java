@@ -15,12 +15,12 @@ public class MathController {
 
 	@GetMapping("/rectangle/a/{height}/{width}")
 	public Integer rectangleArea(@PathVariable Integer height, @PathVariable Integer width) {
-		return height + width;
+		return height * width;
 	}
 
 	@GetMapping("/rectangle/p/{height}/{width}")
 	public Integer rectanglePerimeter(@PathVariable Integer height, @PathVariable Integer width) {
-		return height * width;
+		return height + width;
 	}
 
 	@GetMapping("/circle/p/{r}")
